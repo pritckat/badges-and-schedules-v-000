@@ -21,6 +21,8 @@ end
 def printer(array)
   array.each do |name|
     puts badge_maker(name)
-    #puts assign_rooms(name)
+  rooms = assign_rooms(array)
+  rooms.each do |room|
+    puts room
   end
 end
